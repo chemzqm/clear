@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <script src="/build/build.js"></script>
+  <link rel="stylesheet" href="/build/build.css">
+  <style>
+    #box {
+      height:100px;
+      width: 100px;
+      margin: 40px;
+      background-color: #eee;
+      border-radius: 5px;
+      position: relative;
+    }
+    a {
+      color: #aaa;
+      text-decoration: none;
+      position: absolute;
+      top: 5px;
+      right: 8px;
+    }
+    a:hover {
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <div id="box">
+    <a id="remove" href="#">&times;</a>
+  </div>
+  <script>
+    var clear = require('clear');
+    var link = document.getElementById("remove");
+    var box = document.getElementById("box");
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      clear(box, function() {
+        console.log('cleared');
+      });
+    }, false);
+  </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "clear",
+  "repo": "chemzqm/clear",
+  "description": "fade and bounce out on the left",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component/classes": "*",
+    "kewah/css-animation-event-types": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ],
+  "styles": [
+    "clear.css"
+  ]
+}
